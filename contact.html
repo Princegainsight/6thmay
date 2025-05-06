@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Gainsight PX Tag-->
+  <script type="text/javascript">
+    (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+        (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
+      var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+      var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+    })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-L8XOJHBUDE8T-2");
+  </script>
+  <!-- Gainsight PX Tag-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Responsive Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #1F1F1F;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin-right: 15px;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            transition: background-color 0.3s ease;
+        }
+        
+        header {
+            padding: 20px;
+            text-align: center;
+            color: #f9f9f9;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #ffcc00;
+        }
+
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #ffcc00;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e6b800;
+        }
+
+        footer {
+            background-color: #1F1F1F;
+            color: #f9f9f9;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <main>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="query">Your Query:</label>
+            <textarea id="query" name="query" rows="5" required></textarea>
+
+            <button type="button" onclick="submitForm()">Contact Us</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Prince</p>
+    </footer>
+
+    <script>
+        function submitForm() {
+            alert('Thank you for contacting us!');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
