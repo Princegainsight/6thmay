@@ -220,6 +220,35 @@
             dots[slideIndex-1].className += ' active';
             setTimeout(showSlides, 3000); // Change image every 3 seconds
         }
+
+        // Check if user is logged in and display name
+        document.addEventListener('DOMContentLoaded', function () {
+            const userDisplay = document.getElementById('user-display');
+            const loginButton = document.getElementById('login-btn');
+            const signOutButton = document.getElementById('signout-btn');
+            const storedUserName = window.localStorage.getItem('currentUserName');
+            
+            if (storedUserName && userDisplay && signOutButton) {
+                loginButton.classList.add('hidden');
+                userDisplay.textContent = storedUserName;
+                userDisplay.classList.remove('hidden');
+                signOutButton.classList.remove('hidden');
+                signOutButton.addEventListener('click', function () {
+                    window.localStorage.removeItem('currentUserName');
+                    alert('You have been signed out');
+                    userDisplay.classList.add('hidden');
+                    signOutButton.classList.add('hidden');
+                    loginButton.classList.remove('hidden');
+                });
+            }
+
+            // Redirect to login page on Login button click
+            if (loginButton) {
+                loginButton.addEventListener('click', function () {
+                    window.location.href = 'login.html';
+                });
+            }
+        });
     </script>
 </body>
 </html>
