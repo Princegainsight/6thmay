@@ -1,40 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Gainsight PX Tag-->
-  <script type="text/javascript">
-    (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
-        (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
-      var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
-      var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-    })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-L8XOJHBUDE8T-2");
-      //passing user and account objects:
-aptrinsic("identify",
-  {
-  //User Fields
-    "id": "unique-user-id", // Required for logged in app users
-    "email": "userEmail@address.com",
-    "firstName": "John",
-    "lastName": "Smith",
-    "signUpDate": 1522697426479, //unix time in ms
-    "plan" : "gold", //Custom attributes - please create those custom attributes in Aptrinsic via Account Settings to be tracked.
-    "price" : 95.5,
-    "userHash": "" // optional transient for HMAC identification
-  },
-  {
-  //Account Fields
-    "id":"IBM", //Required
-    "name":"International Business Machine",
-    "Program": "Platinum" // flat custom attributes
- });
-  </script>
-  <!-- Gainsight PX Tag-->
+    <!-- Gainsight PX Tag -->
+    <script type="text/javascript">
+        (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+            (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
+          var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+          var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+        })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-L8XOJHBUDE8T-2");
+    </script>
+    <!-- Gainsight PX Tag -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLX</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Add these styles for the slideshow */
         .slideshow-container {
             max-width: 1000px;
             position: relative;
@@ -159,39 +139,37 @@ aptrinsic("identify",
             <div class="signout-btn hidden" id="signout-btn">Sign Out</div>
         </div>
     </nav>
-    <!-- Slideshow container -->
-     <center>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 5</div>
-            <img src="img1.jpeg">
+    <center>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="img1.jpeg">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="img2.avif">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="img3.jpeg">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="img4.jpg">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="img5.jpeg">
+            </div>
         </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 5</div>
-            <img src="img2.avif">
+        <div class="slideshow-dots">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
         </div>
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 5</div>
-            <img src="img3.jpeg">
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 5</div>
-            <img src="img4.jpg">
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">5 / 5</div>
-            <img src="img5.jpeg">
-        </div>
-    </div>
-    <div class="slideshow-dots">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-    </div>
     </center>
-    <!-- Cards Section -->
     <div class="cards-container">
         <div class="card">
             <h3 class="card-title">Properties</h3>
